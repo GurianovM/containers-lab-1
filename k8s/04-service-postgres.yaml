@@ -11,4 +11,4 @@ spec:
   ports:
   - port: 5432
     targetPort: 5432
-  type: ClusterIP # Доступен только внутри кластера
+  type: ClusterIP # Доступен только внутри кластер

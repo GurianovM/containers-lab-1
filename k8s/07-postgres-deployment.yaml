@@ -41,7 +41,7 @@ spec:
             cpu: "500m"
       volumes:
       - name: postgres-data
-        emptyDir: {} # Временное хранилище (в следующей работе заменим на
+        emptyDir: { } # Временное хранилище (в следующей работе заменим на
         # PersistentVolume)
       - name: init-script
         configMap:
