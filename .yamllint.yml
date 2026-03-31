@@ -11,4 +11,5 @@ rules:
     max-spaces-inside: 1
   indentation:
     spaces: 2
-    indent-sequences: consistent
+    indent-sequences: true
+    check-multi-line-strings: false
