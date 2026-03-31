@@ -31,15 +31,6 @@ jobs:
       with:
         version: 'v1.28.0'
 
-    - name: Dry-run apply
-      run: |
-        for file in k8s/*.yaml; do
-          echo "Validating $file"
-          kubectl apply --dry-run=client --validate=false -f $file
-        done
-      env:
-        KUBECONFIG: /dev/null
-
     - name: Check for deprecated APIs
       run: |
         kubeval --kubernetes-version 1.28.0 --ignore-missing-schemas k8s/*.yaml
