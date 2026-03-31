@@ -140,3 +140,5 @@ func getEnv(key, defaultValue string) string {
 	}
 	return defaultValue
 }
+
+// комментарий заклинает воркфлоу нормально работтаьт
